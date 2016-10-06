@@ -9,23 +9,43 @@
     <form action="/" method="get" id="thisForm">
       <fieldset>
         <legend>Personal Information</legend>
-        <p>
-          <label>Name: <input type="text" name="name"></label>
-        </p>
-        <p>
-          <label>Email: <input type="email" name="email"></label>
-        </p>
-        <p>
-          <label>Gender:
+        <div class="form-element">
+          <label>First Name: <input type="text" name="firstName" required></label>
+        </div>
+        <div class="form-element">
+          <label>Last Name: <input type="text" name="lastName" required></label>
+        </div>
+        <div class="form-element">
+          <label>Email: <input type="email" name="email" required></label>
+        </div>
+        <div class="form-element">
+          <label>Select your gender:
             <label><input type="radio" name="gender" value="male">Male</label>
             <label><input type="radio" name="gender" value="female">Female</label>
             <label><input type="radio" name="gender" value="other">Other: <input type="text" name="other"></label>
           </label>
-        </p>
+        </div>
+        <div class="form-element">
+          <label>Select your age:
+            <select name="age">
+              <option value="default" selected>Please select an option</option>
+              <option value="<18">Under 18 years old</option>
+              <option value="18-24">18 - 24 years old</option>
+              <option value="25-34">25 - 34 years old</option>
+              <option value="35-44">35 - 44 years old</option>
+              <option value="45-54">45 - 54 years old</option>
+              <option value="55-64">55 - 64 years old</option>
+              <option value=">65">65 years or older</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-element">
+          <textarea name="comments" rows="10" cols="95">Please leave any additional comments or information here.</textarea>
+        </div>
       </fieldset>
-      <p>
+      <div class="form-element">
         <input type="submit" value="Submit">
-      </p>
+      </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>

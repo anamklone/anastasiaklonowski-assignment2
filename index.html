@@ -3,9 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
   </head>
   <body>
-    
+    <form action="/" method="get" id="thisForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <label>Name: <input type="text" name="name"></label>
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email"></label>
+        </p>
+        <p>
+          <label>Gender:
+            <label><input type="radio" name="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+            <label><input type="radio" name="gender" value="other">Other: <input type="text" name="other"></label>
+          </label>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

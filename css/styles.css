@@ -1,0 +1,16 @@
+body {
+  font-family: 'Merriweather', serif;
+  font-size: .75em;
+}
+
+#thisForm {
+  width: 55%;
+  padding: 10px;
+  background-color: azure;
+}
+
+div.form-element {
+  display: inline-block;
+  width: 95%;
+  margin: 10px;
+}

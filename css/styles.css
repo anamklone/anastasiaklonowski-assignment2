@@ -9,8 +9,30 @@ body {
   background-color: azure;
 }
 
+legend {
+  text-align: center;
+}
+
 div.form-element {
   display: inline-block;
   width: 95%;
   margin: 10px;
+}
+
+div.alert {
+  color: red;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+}
+
+#submit {
+  text-align: center;
+}
+
+input.btn {
+  font-family: 'Merriweather', serif;
+  padding: 5px;
 }

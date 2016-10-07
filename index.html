@@ -23,11 +23,12 @@
           <div class="alert"></div>
         </div>
         <div class="form-element">
-          <label>Select your gender:
+          <label for="gender">Select your gender:
             <label for="male"><input type="radio" name="gender" id="male" value="male">Male</label>
             <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
             <label for="other"><input type="radio" name="gender" id="other" value="other">Other: <input type="text" name="other" id="textBox" disabled></label>
           </label>
+          <div class="alert"></div>
         </div>
         <div class="form-element">
           <label for="age">Select your age:
@@ -42,17 +43,19 @@
               <option value=">65">65 years or older</option>
             </select>
           </label>
+          <div class="alert"></div>
         </div>
       </fieldset>
       <br>
       <fieldset>
         <legend>Feedback</legend>
         <div class="form-element">
-          <textarea name="comments" rows="10" placeholder="Please leave any additional comments or information here."></textarea>
+          <textarea name="feedback" rows="10" placeholder="Please leave any additional comments or information here."></textarea>
+          <div class="alert"></div>
         </div>
       </fieldset>
       <div id="submit" class="form-element">
-        <input type="submit" value="Submit" class="btn">
+        <input type="submit" value="Submit">
       </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

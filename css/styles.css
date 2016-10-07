@@ -26,13 +26,15 @@ div.alert {
 
 textarea {
   width: 100%;
+  resize: none;
 }
 
 #submit {
   text-align: center;
 }
 
-input.btn {
+input[type=submit] {
   font-family: 'Merriweather', serif;
   padding: 5px;
 }
+

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Feedback</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
   </head>
@@ -11,24 +11,27 @@
       <fieldset>
         <legend>Personal Information</legend>
         <div class="form-element">
-          <label>First Name: <input type="text" name="firstName" required></label>
+          <label for="firstName">First Name: <input type="text" name="firstName" id="firstName"></label>
+          <div class="alert"></div>
         </div>
         <div class="form-element">
-          <label>Last Name: <input type="text" name="lastName" required></label>
+          <label for="lastName">Last Name: <input type="text" name="lastName" id="lastName"></label>
+          <div class="alert"></div>
         </div>
         <div class="form-element">
-          <label>Email: <input type="email" name="email" required></label>
+          <label for="email">Email: <input type="email" name="email" id="email"></label>
+          <div class="alert"></div>
         </div>
         <div class="form-element">
           <label>Select your gender:
-            <label><input type="radio" name="gender" value="male">Male</label>
-            <label><input type="radio" name="gender" value="female">Female</label>
-            <label><input type="radio" name="gender" value="other">Other: <input type="text" name="other" id="textBox" disabled></label>
+            <label for="male"><input type="radio" name="gender" id="male" value="male">Male</label>
+            <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
+            <label for="other"><input type="radio" name="gender" id="other" value="other">Other: <input type="text" name="other" id="textBox" disabled></label>
           </label>
         </div>
         <div class="form-element">
-          <label>Select your age:
-            <select name="age">
+          <label for="age">Select your age:
+            <select name="age"id="age">
               <option value="default" selected>Please select an option</option>
               <option value="<18">Under 18 years old</option>
               <option value="18-24">18 - 24 years old</option>
@@ -41,13 +44,15 @@
           </label>
         </div>
       </fieldset>
+      <br>
       <fieldset>
+        <legend>Feedback</legend>
         <div class="form-element">
-          <textarea name="comments" rows="10" cols="95">Please leave any additional comments or information here.</textarea>
+          <textarea name="comments" rows="10" placeholder="Please leave any additional comments or information here."></textarea>
         </div>
       </fieldset>
-      <div class="form-element">
-        <input type="submit" value="Submit">
+      <div id="submit" class="form-element">
+        <input type="submit" value="Submit" class="btn">
       </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
